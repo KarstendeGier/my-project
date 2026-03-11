@@ -8,5 +8,28 @@
 <h1>Kennismaking</h1>
 <p>Karsten de Gier</p>
 
+
+<p>Als het element <a href="https://html.spec.whatwg.org/multipage/text-level-semantics.html#the-a-lement"> <code>&lt;a&gt;</code></a> een attribuut 
+    <a href="https://html.spec.whatwg.org/multipage/links.html#attr-hyperlink-href"><code>href</code></a> heeft, is het een hyperlink. 
+</p>
+
+<button type="button" id="open">Open</button>
+<dialog id="dialog">
+    <h1>Dialoogvenster</h1>
+    <p>De inhoud van een Dialoogvenster kan zijn wat u maar bedenkt.</p>
+<button type="button" id="close">Close</button>
+</dialog>
+<script>
+    const dialog = document.getElementById('dialog');
+    const closeButton = document.getElementById('close');
+    const openButton = document.getElementById('open');
+
+    openButton.addEventListener('click', () => dialog.showModal());
+    closeButton.addEventListener('click', () => dialog.close());
+
+</script>
+
+
+
 </body>
 </html>
