@@ -9,9 +9,10 @@
 <p>Karsten de Gier</p>
 
 
-<p>Als het element <a href="https://html.spec.whatwg.org/multipage/text-level-semantics.html#the-a-lement"> <code>&lt;a&gt;</code></a> een attribuut 
+<!--<p>Als het element <a href="https://html.spec.whatwg.org/multipage/text-level-semantics.html#the-a-lement"> <code>&lt;a&gt;</code></a> een attribuut 
     <a href="https://html.spec.whatwg.org/multipage/links.html#attr-hyperlink-href"><code>href</code></a> heeft, is het een hyperlink. 
 </p>
+klein voorbeeld van een javascript om een dialoog te starten
 
 <button type="button" id="open">Open</button>
 <dialog id="dialog">
@@ -29,7 +30,123 @@
 
 </script>
 
+-->
+<!--
 
+    <button type="button" popovertarget="toastje">Klik voor pop-over</button>
+    <p id="toastje" popover>Dit is de pop-over</p>
+
+
+<details name="productdetails">
+    <summary>Productdetails</summary>
+    <p>Uiterlijke details van dit product</p>
+</details>    
+<details name="productdetails">
+    <summary>Technische samenvatting</summary>
+    <p>Technische samenvatting van dit product</p>
+</details>
+<details open name="productdetails">
+    <summary>Productdetails</summary>
+    <p>details van dit dit product</p>
+</details>
+
+<img src="/images/waterlelie_640.webp"
+  width="640"
+  height="423"
+  alt="Een bloeiende waterlelie."
+  srcset="/images/waterlelie_640.webp 640w,
+         /images/waterlelie_1280.webp 1280w,
+         /images/waterlelie_1920.webp 1920w,
+         /images/waterlelie_1920.webp 1920w"
+  sizes="(max-width: 1024px) 100vw 50vw"
+  loading="lazy"
+
+  
+door open toe te voegen opent deze als eerste. Doordat hij dezelfde naam heeft als de andere disclosure 
+widgets sluit hij weer als je een andere opent
+
+-->
+
+<form>
+    <p>
+        <label>Voornaam:
+            <input name="voornaam" type="text" autofocus>
+        </label>
+    </p>
+    <button type="submit">Verzend</button>
+
+</form>
+
+<form>
+    <p>
+        <label>IBAN:
+            <input name="IBAN" type="text" minlength="18" maxlength="18">
+        </label>
+    </p>
+    <button type="submit">Verzend</button>
+
+</form>
+
+<form>
+    <p>
+        <label>Postcode: <small>1234 AB</small>
+            <input name="postcode" pattern="[0-9]{4}\s?[a-zA-Z]{2}" title="Een postcode bestaat uit 4 cijfers en 2 letters.">
+        </label>
+    </p>
+    <button type="submit">Verzend</button>
+
+</form>
+
+
+<form>
+    <p>
+        <label>Voornaam: 
+            <input name="voornaam" type="text" autocomplete="given-name">
+        </label>
+    </p>
+    <button type="submit">Verzend</button>
+
+</form>
+
+<form>
+    <p>
+        <label>Achternaam: 
+            <input name="achternaam" type="text" autocomplete="family-name">
+        </label>
+    </p>
+    <button type="submit">Verzend</button>
+
+</form>
+
+<form>
+    <p>
+        <label>De tafel van 6: 
+            <input name="tafels=" type="number" value="0" step="6">
+        </label>
+    </p>
+    <button type="submit">Verzend</button>
+
+</form>
+
+<form>
+    <p>
+        <label>waarde: 
+            <input name="range" type="range" min="-100" max="100" step="10">
+        </label>
+    </p>
+    <button type="submit">Verzend</button>
+
+</form>
+
+<form>
+    <p>
+        <label>Kies een kleur: 
+            <input name="kleur" type="color" value="#ff0000">
+        </label>
+    </p>
+    <button type="submit">Verzend</button>
+
+</form>
 
 </body>
 </html>
